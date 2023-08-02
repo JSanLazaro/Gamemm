@@ -1,0 +1,8 @@
+<p>gamegrid works!</p>
+<mtx-grid [data]="list" [columns]="columns" [cellTemplate]="{img_url: imageTpl}" [trackBy]="trackByName">
+</mtx-grid>
+<ng-template #imageTpl let-row let-index="index" let-col="colDef">
+    <div class="img">
+        <img src="../assets{{ row.img_url }}" alt="imagen {{ row.title }}" srcset="" />
+    </div>
+</ng-template>

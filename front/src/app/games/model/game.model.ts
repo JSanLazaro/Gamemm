@@ -1,0 +1,17 @@
+export interface Game{
+    _id:number,
+    year:number,
+    nomm:number,
+    title:string,
+    lema:string,
+    description:string,
+    longdescription:string,
+    img_url:string,
+    vid_url:string,
+    img_urls:string[],
+    vid_urls:string[],
+    trailer_urls:string[],
+    notamm:number,
+    notauser:number,
+    tags:string[],
+}

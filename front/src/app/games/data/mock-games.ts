@@ -1,0 +1,52 @@
+// Game{
+//     _id:number,
+//     year:number,
+//     nomm:number,
+//     title:string,
+//     description:string,
+//     img_url:string,
+//     vid_url:string,
+//     img_urls:string[],
+//     vid_urls:string[],
+//     trailer_urls:string[],
+//     notamm:number,
+//     notauser:number,
+//     tags:string[],
+// }
+import { Game } from "../model/game.model";
+export const games:Game[] = [
+    {
+        _id: 1,
+        year:2010,
+        nomm:181,
+        title: "Lego Indiana Jones 2",
+        lema: "La ultima gozada",
+        description: "Adictivo desde el primer momento. Toneladas de contenido extra. Nuevo sistema de pantalla dividada para dos jugadores. Necesita un parche. El control de los vehiculos es mejorable.",
+        longdescription:"",
+        img_url: "../../../assets/img/gamefachade/181/181_LegoIndianaJones2_Portada.jpg",
+        vid_url: "https://www.youtube.com/embed/atRkw6PwwE4",
+        img_urls:[],
+        vid_urls:[],
+        trailer_urls:[],
+        notamm: 90,
+        notauser: 90,
+        tags:["accion","aventura"]
+    },
+    {
+        _id: 2,
+        year:2010,
+        nomm:181,
+        title: "Dark Void",
+        lema: "¡Accion de altos vuelos!",
+        description: "Lo jugable que es. Sistema de camaras. Accion en vuelo. Banda sonora. Corto pero intenso. falta detalle algun escenario. Voces en ingles",
+        longdescription:"",
+        img_url: "../../../assets/img/gamefachade/181/181_Dark Void_Portada.jpg",
+        vid_url: "https://www.youtube.com/embed/gZKToSJ4V9c",
+        img_urls:[],
+        vid_urls:[],
+        trailer_urls:[],
+        notamm: 92,
+        notauser: 92,
+        tags:["accion","aventura"]
+    },
+]

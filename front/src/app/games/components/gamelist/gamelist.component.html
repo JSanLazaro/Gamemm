@@ -1,0 +1,57 @@
+<p>gamelist works!</p>
+<div class="container">
+  <div class="row">
+    <div class="">
+      <table mat-table [dataSource]="dataSource"
+        class="mat-elevation-z8 z-depth-1 table table-responsive table-striped table-bordered table-hover" #tabla1>
+        <ng-container matColumnDef="year">
+          <th mat-header-cell *matHeaderCellDef>AÑO</th>
+          <td mat-cell *matCellDef="let game">{{ game.year }}</td>
+        </ng-container>
+        <ng-container matColumnDef="title">
+          <th mat-header-cell *matHeaderCellDef>TITULO</th>
+          <td mat-cell *matCellDef="let game" class="title">
+            <a routerLink='/details/{{game._id}}'>{{ game.title }}</a>
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="image">
+          <th mat-header-cell *matHeaderCellDef>IMAGEN</th>
+          <td mat-cell *matCellDef="let game">
+            <div class="img">
+              <img src="../assets{{ game.img_url }}" alt="imagen {{ game.title }}" srcset="" />
+            </div>
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="gameplay">
+          <th mat-header-cell *matHeaderCellDef>GAMEPLAY</th>
+          <td mat-cell *matCellDef="let game" class="centered">
+            <button class="btn btn-success px-3 py-2" (click)="playVideo(game.vid_url)">
+              <mat-icon class="icon-long">play_arrow</mat-icon>
+            </button>
+            <app-videoplayer [videoUrl]="game.vid_url" [videoTitle]="game.title"></app-videoplayer>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef>DESCRIPCION</th>
+          <td mat-cell *matCellDef="let game" class="description"><div class="description">
+            {{ game.description }}
+          </div></td>
+        </ng-container>
+        <ng-container matColumnDef="notamm">
+          <th mat-header-cell *matHeaderCellDef>NOTA MM</th>
+          <td mat-cell *matCellDef="let game" class="centered">
+            {{ game.notamm }}
+          </td>
+        </ng-container>
+        <!-- <ng-container matColumnDef="function">
+          <th mat-header-cell *matHeaderCellDef>FUNCION</th>
+          <td mat-cell *matCellDef="let game"></td>
+        </ng-container> -->
+        <tr mat-header-row *matHeaderRowDef="columnas"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnas"></tr>
+      </table>
+      <mat-paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
+    </div>
+  </div>
+</div>
