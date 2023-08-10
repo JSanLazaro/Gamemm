@@ -1,15 +1,41 @@
-<p>gamelist works!</p>
+<!-- <app-search class="search"></app-search> -->
+<!-- <app-filter class="filter"></app-filter> -->
+<!-- <div class="input">
+  <input class="form-control" type="text" placeholder="Search" (keyup)="filter($event)" [(ngModel)]="searchText">
+</div> -->
+<div class="input">
+  <mat-form-field class="input-field-inline">
+    <mat-label>desde</mat-label>
+    <input class="input-control" matInput [(ngModel)]="iYear1" (change)="filterYear1($event)" type="number" name="input_year_1" id=""
+      value="2010">
+  </mat-form-field>
+  <mat-form-field class="input-field-inline mr-5">
+    <mat-label>hasta</mat-label>
+    <input class="input-control" matInput [(ngModel)]="iYear2" (change)="filterYear2($event)"type="number" name="input_year_2" id="" value="2012">
+  </mat-form-field>
+
+  <mat-form-field class="input-field">
+    <!-- <mat-label>Search</mat-label> -->
+    <input class="input-control" matInput (keyup)="filter($event)" placeholder="search">
+  </mat-form-field>
+
+
+  <mat-form-field class="input-field-inline">
+    <mat-label>nota</mat-label>
+    <input class="input-control" matInput type="number" name="" id=""></mat-form-field>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="">
-      <table mat-table [dataSource]="dataSource"
+      <table mat-table [dataSource]="dataSource" matSort
         class="mat-elevation-z8 z-depth-1 table table-responsive table-striped table-bordered table-hover" #tabla1>
         <ng-container matColumnDef="year">
-          <th mat-header-cell *matHeaderCellDef>AÑO</th>
+          <th mat-header-cell mat-sort-header *matHeaderCellDef>AÑO</th>
           <td mat-cell *matCellDef="let game">{{ game.year }}</td>
         </ng-container>
         <ng-container matColumnDef="title">
-          <th mat-header-cell *matHeaderCellDef>TITULO</th>
+          <th mat-header-cell mat-sort-header *matHeaderCellDef>TITULO</th>
           <td mat-cell *matCellDef="let game" class="title">
             <a routerLink='/details/{{game._id}}'>{{ game.title }}</a>
           </td>
@@ -34,12 +60,14 @@
 
         <ng-container matColumnDef="description">
           <th mat-header-cell *matHeaderCellDef>DESCRIPCION</th>
-          <td mat-cell *matCellDef="let game" class="description"><div class="description">
-            {{ game.description }}
-          </div></td>
+          <td mat-cell *matCellDef="let game" class="description">
+            <div class="description">
+              {{ game.description }}
+            </div>
+          </td>
         </ng-container>
         <ng-container matColumnDef="notamm">
-          <th mat-header-cell *matHeaderCellDef>NOTA MM</th>
+          <th mat-header-cell mat-sort-header *matHeaderCellDef>NOTA MM</th>
           <td mat-cell *matCellDef="let game" class="centered">
             {{ game.notamm }}
           </td>

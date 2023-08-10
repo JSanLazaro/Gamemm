@@ -1,0 +1,28 @@
+.img{
+    height: 40dvi;
+}
+.img img {
+    // width: 100%;
+    width: 40dvi;
+    height: 40dvi;
+    
+  }
+  @supports (object-fit: cover) {
+    .img img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+.title{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.description{
+    color: burlywood;
+    margin: 1% 5% 2% 5%;
+}
+.longdescription{
+    color: darkmagenta;
+    margin:2% 2% 2% 1%;
+}

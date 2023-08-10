@@ -59,6 +59,26 @@ table,
   display: inline-flex;
   min-width: 100%;
 }
+.search{
+  display: flex;
+  justify-content: center;
+  margin-top: 2dvi;
+  margin-bottom: 1dvi;
+}
+.filter{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2dvi;
+  margin-bottom: 4dvi;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+}
+.input-field{
+  width: 20% !important;
+}
 
 @media (max-width: $phone) {
   .mat-table {

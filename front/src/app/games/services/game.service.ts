@@ -9,17 +9,25 @@ import { games } from '../data/mock-games';
 export class GameService {
   constructor() {}
   getGameById(id: number): Game {
-    console.log('gameService getGameById-->idBuscado=' + id);
     let selectedObject = this.filterById(games, id);
-    console.log('gameService getGameById-->gameidEncontrado=' + selectedObject._id);
     return selectedObject;
+  }
+  getGameImgUrlsById(id:number){
+    let game = this.getGameById(id);
+    return game.img_urls;
+  }
+  getGameVidUrlsById(id:number){
+    let game = this.getGameById(id);
+    return game.vid_urls;
+  }
+  getGameTrailerUrlsById(id:number){
+    let game = this.getGameById(id);
+    return game.trailer_urls;
   }
   filterById(games: Game[], id: number):Game {
     for(let i=0;i<games.length;i++){
       let game = games[i];
-      console.log("gameService filterById-->i="+i+" idBuscado="+ id + " game_id="+game._id);
       if (game._id==id){
-        console.log("gameService filterById--> Id coincidente");
         return game;
       }
     }

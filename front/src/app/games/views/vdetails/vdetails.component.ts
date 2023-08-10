@@ -18,12 +18,9 @@ export class VdetailsComponent {
   ngOnInit() {
     this.route.paramMap.subscribe((params) => {
       const gameIdParam = params.get('id');
-      console.log('vdetailsComponent ngOnInit--> ParamsId =' + gameIdParam);
       if (gameIdParam != null) {
         this.id = +gameIdParam;
-        console.log('vdetailsComponent ngOnInit--> ConvertedParamsId =' + this.id);
         this.game = this.gameService.getGameById(this.id);
-        console.log('vdetailsComponent ngOnInit--> gameId =' + this.game._id);
       }
     });
   }

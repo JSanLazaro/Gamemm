@@ -1,0 +1,15 @@
+    <div class="imgslider">
+        <ng-image-slider [images]="vidCollection" #nav (imageClick)="showModal($event)" [imagePopup]="false">
+           
+        </ng-image-slider>
+    </div>
+    <app-videoplayer [videoUrl]="displayUrls[displayUrlIndex]" [videoTitle]="vidurls[1]"></app-videoplayer>
+
+
+<!-- <div class="vidslider">    
+    <div class="vid" *ngFor="let displayUrl of displayUrls">
+        <iframe width="300" height="200" [src]="displayUrl" class="embed-responsive-item" frameborder="0" allow=""
+            allowfullscreen>
+        </iframe>
+    </div>
+</div> -->

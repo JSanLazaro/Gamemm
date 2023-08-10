@@ -5,7 +5,7 @@ export interface Game{
     title:string,
     lema:string,
     description:string,
-    longdescription:string,
+    longdescription:string[],
     img_url:string,
     vid_url:string,
     img_urls:string[],

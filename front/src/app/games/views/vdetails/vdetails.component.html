@@ -1,4 +1,35 @@
-<p>vdetails works!</p>
-{{game.description}}
+<section id="section_head">
+    <div class="img wrap-text-around clearfix
+   ">
+        <img class="img-fluid
+        rounded-circle float-left circle-placed-left
+       
+       " src="../assets{{ game.img_url }}" alt="imagen {{ game.title }}" srcset="" />
+       <p class="d-line">
+        {{game.title}}
+       </p>
+    </div>
+    <div class="title d-line">
+        {{game.title}}
+    </div>
+</section>
+<section id="section_content">
+    <p class="description">{{game.description}}</p>
+    <p *ngFor="let str of game.longdescription" class="longdescription">{{str}}</p>
+
+</section>
+<section id="section_images">
+    <h1>Imagenes</h1>
+    <app-imglist [gameid]="game._id"></app-imglist>
+</section>
+<section id="section_trailers">
+    <h1>Trailers</h1>
+    <app-vidlist [gameid]="game._id" [isTrailer]="true"></app-vidlist>
+</section>
+<h1>Videos</h1>
+<section id="section_videos">
+    <app-vidlist [gameid]="game._id" [isTrailer]="false"></app-vidlist>
+</section>
+
 
 <a routerLink="/">volver</a>
