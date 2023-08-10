@@ -16,7 +16,7 @@ declare var $: any;
 })
 export class GamelistComponent {
   @ViewChild(MatSort)
-  sort!: MatSort;
+  matSort!: MatSort;
   @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
   columnas: string[] = [
     'year',
@@ -47,7 +47,7 @@ export class GamelistComponent {
     //   this.events = data;
     this.dataSource = new MatTableDataSource<Game>(this.games);
     this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+    this.dataSource.sort = this.matSort;
 
     // })
   }
@@ -102,27 +102,7 @@ export class GamelistComponent {
     };
     this.dataSource.filter = e.target.value;
   }
-  sortData(sort: Sort) {
-    const data = this.games.slice();
-    if (!sort.active || sort.direction === '') {
-      this.dataSource = data;
-      return;
-    }
-
-    this.dataSource = data.sort((a, b) => {
-      const isAsc = sort.direction === 'asc';
-      switch (sort.active) {
-        case 'year':
-          return this.compare(a.year, b.year, isAsc);
-        case 'title':
-          return this.compare(a.title, b.title, isAsc);
-        case 'notamm':
-          return this.compare(a.notamm, b.notamm, isAsc);
-        default:
-          return 0;
-      }
-    });
-  }
+  
   compare(a: number | string, b: number | string, isAsc: boolean) {
     return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
   }

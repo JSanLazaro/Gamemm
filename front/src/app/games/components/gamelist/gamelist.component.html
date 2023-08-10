@@ -22,13 +22,13 @@
 
   <mat-form-field class="input-field-inline">
     <mat-label>nota</mat-label>
-    <input class="input-control" matInput type="number" name="" id=""></mat-form-field>
+    <input class="input-control" matInput [(ngModel)]="iNotamm" type="number" name="" id=""></mat-form-field>
 </div>
 
 <div class="container">
   <div class="row">
     <div class="">
-      <table mat-table [dataSource]="dataSource" matSort
+      <table mat-table [dataSource]="dataSource" matSort 
         class="mat-elevation-z8 z-depth-1 table table-responsive table-striped table-bordered table-hover" #tabla1>
         <ng-container matColumnDef="year">
           <th mat-header-cell mat-sort-header *matHeaderCellDef>AÑO</th>
@@ -79,7 +79,7 @@
         <tr mat-header-row *matHeaderRowDef="columnas"></tr>
         <tr mat-row *matRowDef="let row; columns: columnas"></tr>
       </table>
-      <mat-paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
+      <mat-paginator [pageSizeOptions]="[25, 50, 100]" showFirstLastButtons></mat-paginator>
     </div>
   </div>
 </div>
