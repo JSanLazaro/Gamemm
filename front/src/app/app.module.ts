@@ -45,11 +45,11 @@ import { MatInputModule } from '@angular/material/input'
     LightboxModule,
     MtxGridModule,
     MtxSelectModule,
-    NgImageSliderModule,
     FormsModule,
     MatSortModule,
     MatFormFieldModule,
-    MatInputModule   
+    MatInputModule,
+    NgImageSliderModule  
   ],
   providers: [],
   bootstrap: [AppComponent],
