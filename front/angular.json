@@ -15,8 +15,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "angular-cli-ghpages:deploy",
           "options": {
+            "baseHref": "https://JSanLazaro.github.io/Gamemm/",
+            "name": "Gamemm",
+            "email": "jsanlazaro@hotmail.com",
             "outputPath": "dist/front",
             "index": "src/index.html",
             "main": "src/main.ts",
