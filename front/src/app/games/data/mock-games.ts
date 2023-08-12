@@ -479,7 +479,7 @@ export const games: Game[] = [
     title: 'TOCA Race Driver 3',
     lema: '',
     description:
-      '',
+      'carreras.',
     longdescription: [
       ''      
       ,'La wikipedia'
@@ -494,98 +494,495 @@ export const games: Game[] = [
     ],
     notamm: 96,
     notauser: 96,
-    tags: ['', ''],    
+    tags: ['carreras', ''],    
   },{
     _id: 19,
     year: 2007,
-    nomm: 155,
-    title: 'Call',
-    lema: '',
+    nomm: 162,
+    title: 'World Shift',
+    lema: 'Estrategia',
     description:
-      '',
+      'Estrategia. Combina lo mejor de este genero con elmentos de rol y estrategia y con un modo multijugador de lujo, para alcanzar un resultado intenso, vibrante y adictivo.',
     longdescription: [
       ''      
       ,'La wikipedia'
     ],
-    img_url: '',
-    vid_url: '',
-    img_urls: [
+    img_url: '../../../assets/img/gamefachade/162/162_worldshift.jpg',
+    vid_url: 'https://www.youtube.com/embed/3gUEofzRJrI',
+    img_urls: ['../../../assets/img/gamefachade/162/162_wshift_1.jpg'
+    ,'../../../assets/img/gamefachade/162/162_wshift_2.jpg'
+    ,'../../../assets/img/gamefachade/162/162_wshift_3.jpg'
+    ,'../../../assets/img/gamefachade/162/162_wshift_4.jpg',
     ],
     vid_urls: [
     ],
     trailer_urls: [
     ],
-    notamm: 93,
-    notauser: 93,
-    tags: ['', ''],    
+    notamm: 92,
+    notauser: 92,
+    tags: ['estrategia', 'rol'],    
   },{
     _id: 20,
-    year: 2007,
-    nomm: 155,
-    title: 'Call',
-    lema: '',
+    year: 2010,
+    nomm: 181,
+    title: 'Left 4 Dead 2',
+    lema: '¡Zombi bueno, zombi muerto!',
     description:
-      '',
+      'Excepcional jugabilidad y diseño. zombir armas. mejor IA. Nuevo multijugador. ',
     longdescription: [
-      ''      
+      'La plaga de zombi esta mas viva que nunca. Viaja a la America profunda en el Sur de los Estados Unidos y combate a los zombis mas brutales. Accioin frenetica e intensa para disfrutar, sobre todo, multijugador.'      
+      ,'Left 4 Dead 2 es un videojuego de disparos en primera persona cooperativo de tipo videojuego de terror creado por la compañía Valve.'
+      ,'Es la secuela de Left 4 Dead y se lanzó al mercado el 17 de noviembre de 2009 en Estados Unidos y América. En Europa llegó tres días después, el 20 de noviembre. Esta secuela está disponible para PC y para la consola Xbox 360. '
+      ,'Dead Center (Punto Muerto): Todo comienza en la ciudad de Savannah (Georgia), en la azotea de un hotel. Los supervivientes observan cómo un helicóptero de evacuación se aleja sin verlos. Pero la "CEDA" había informado de otro centro de evacuación en el Centro Comercial Liberty, por lo que debemos dirigirnos hacia allí. Para ello habrá que salir del hotel (que se está desmoronando debido a los incendios que hay en su interior), atravesar las calles bloqueadas por vehículos y barreras policiales y entrar en una tienda de armas, donde el dueño nos ayuda a desbloquear la calle que lleva a dicho centro comercial (no sin antes entregarle unos refrescos de Coca-Cola). Una vez dentro del edificio, descubrimos que ya había sido invadido por los infectados, por lo que tenemos que luchar contra los infectados hasta llegar al vestíbulo, en donde encontramos el automóvil de Jimmy Gibbs Junior en exhibición. Habrá que coger los bidones de gasolina cercanos para llenar el depósito del coche y una vez lleno, usarlo para escapar. Esta campaña está situada al mismo tiempo que The Sacrifice.'
+      ,'DLC #1: Defunción: Incluye solo una campaña de 3 capítulos llamada "Defunción", con nuevos infectados como "El superviviente caído", nuevos modelos de infectados normales y un nuevo modelo de Witch (vestida con Velo de Novia). Nuevas armas como: La M60, el bate, el palo de Golf y nuevos recursos como los "Lockers". También incluye los Modos de juego "Mutaciones" y otras adiciones menores. Disponible desde el 22 de abril de 2010. '
+      ,'DLC #2: El Sacrificio: Incluye la campaña "El Sacrificio" de 3 capítulos un poco más largos que el DLC anterior y con la campaña "Alta Médica" del juego anterior. También incluye armas como la M60 y el bate de baseball, además de volver a jugar con los supervivientes del juego anterior y un nuevo modelo para el Tank. 5 nuevas mutaciones para los que compraron el primer DLC y un nuevo explosivo "El barril", Disponible desde el 10 de octubre de 2010. '
+      ,'DLC #3: Aguas Turbulentas: Incluye una nueva campaña de 4 capítulos: "Cold Stream", cuatro campañas del primer Left 4 Dead: "Terapia de Choque", "Toque de Difuntos", "Último Vuelo" y "Cosecha de Sangre". Cold Stream estuvo en desarrollo desde principios de 2011, sin embargo al ser el contenido más grande que ha hecho Valve para Left 4 Dead 2, su salida se demoró varios meses. Estuvo disponible a partir del 24 de julio de 2012 en Steam y a partir del 3 de agosto de 2012 para Xbox 360. A diferencia de los primeros dos DLC, este no cuenta con nuevas armas, pero incluye una opción para elegir cualquier mutación a voluntad para aquellos que compraron el primer DLC. Cold Stream no es parte de la historia canon del juego. '
+      ,'DLC #4: La Batalla Final: Esta es la actualización más grande de Left 4 Dead 2 después de 8 años, fue completamente desarrollada por la comunidad para la comunidad, incluye una nueva campaña llamada "La Batalla Final" basada en el mapa de supervivencia del mismo nombre del Left 4 Dead original, hasta el momento era la única campaña oficial de L4D1 que no había sido porteada a la segunda entrega, donde los supervivientes del primer juego tienen que escapar encendiendo un faro, posiblemente el clímax de esta campaña sea el más complicado de todas las campañas oficiales ya que nos tenemos que enfrentar a cuatro tanks y repostar latas de combustible para asegurar la supervivencia. Esta actualización añadió 26 nuevos mapas para el modo supervivencia, 4 nuevos mapas para el modo búsqueda, 2 nuevas armas cuerpo a cuerpo: la pala y la horquilla, la inclusión de las 5 armas de Counter-Strike: Source que hasta el momento de esta actualización eran exclusivas de la versión alemana del juego: la H&K MP5, el AWP, el Steyr Scout, el SIG SG 552 y el cuchillo de combate, de igual manera se añadieron 30 logros completamente nuevos disponibles para desbloquear, inclusión de los modelos de infectados del primer juego, nuevas animaciones, diálogos, mejoras para el PVP así como soluciones de un montón de bugs, glitches y exploits. Está actualización está disponible de forma gratuita desde el 24 de septiembre del 2020 exclusivamente para la versión de Steam del juego. '
       ,'La wikipedia'
     ],
-    img_url: '',
-    vid_url: '',
-    img_urls: [
+    img_url: '../../../assets/img/gamefachade/180/180_left4dead2.jpg',
+    vid_url: 'https://www.youtube.com/embed/aN9BJOCxuYk',
+    img_urls: ['../../../assets/img/gamefachade/180/180_left4dead2_1.jpg',
+    '../../../assets/img/gamefachade/180/180_left4dead2_2.jpg',
+    '../../../assets/img/gamefachade/180/180_left4dead2_3.jpg',
+    '../../../assets/img/gamefachade/180/180_left4dead2_4.jpg',
     ],
     vid_urls: [
     ],
     trailer_urls: [
     ],
-    notamm: 93,
-    notauser: 93,
-    tags: ['', ''],    
+    notamm: 94,
+    notauser: 94,
+    tags: ['accion', 'zombie','disparos'],    
   },{
     _id: 21,
-    year: 2007,
-    nomm: 155,
-    title: 'Call',
-    lema: '',
+    year: 2010,
+    nomm: 180,
+    title: 'Divinity II',
+    lema: 'Ego Draconis. A por la orden',
     description:
-      '',
+      'Rol. La historia principal y misiones secundarias apasionantes. Sistema de habilidades permite crear personajes muy variados. La Ia de enemigos cometen errores. Al principio la personalizacion del personaje es limitada.',
     longdescription: [
-      ''      
+      'Divinity II es un videojuego de rol de 2009 desarrollado por Larian Estudios y subtitulado Ego Draconis, fue publicado por dtp Entertainment.1​ En 2011 fue reeditado dentro de La Saga del Caballero del Dragón qué incluyó la expansión de Flames of Vengeance. '      
+      ,'La característica original del juego es la capacidad de combinar el combate aéreo como dragón, y el terrestre como humano. Es el tercer juego en la franquicia Divinity y el primero para consolas así como para Windows. '
+      ,'Este es un juego de rol tradicional, lo cual incluye completar búsquedas, explorar el mundo e interaccionar con una variedad de personajes. Divinity II utiliza algunos elementos de juegos como Diablo, también utiliza elementos como árboles de conversación, elecciones qué afectan a otros acontecimientos en el juego, plataformas o rompecabezas. Cuándo habla con PNJs el jugador, a menudo, tendrá la opción de leer sus mentes, lo cual puede proporcionar información muy útil. '
+      ,'Los jugadores eligen a su personaje durante el prólogo, pero la progresión es libre y puede desarrollar su carácter en una dirección diferente. Las habilidades incluyen: alquimia, para crear pociones; necromancia, para personalizar una mascota zombi; y encantamiento, para mejorar armas y equipo. '
+      ,'Más adelante el protagonista obtiene una base de las operaciones: La Torre de Batalla, así como la capacidad de convertirse en dragón. '
+      ,'El juego tiene lugar en el mundo de Rivellon. El protagonista es un cazador de dragones, su dura iniciación en los secretos de los cazadragones lo ha dejado amnésico. '
+      ,'Durante el juego, el héroe tiene varios encuentros con Damian, el Maldito. Damian está reuniendo sus ejércitos de monstruos para destruir Rivellon. Damian clama venganza por la muerte de su amor, Ygerna, a manos de su padre Lucian. El jugador cree que resucitando a Ygerna matara a Damian. Después de adquirir los poderes del caballero del dragón. El héroe descubre que estaba equivocado al intentar revivir a Ygerna y acaba encerrado en una prisión de cristal. '
+
       ,'La wikipedia'
     ],
-    img_url: '',
-    vid_url: '',
-    img_urls: [
+    img_url: '../../../assets/img/gamefachade/180/180_divinity2.jpg',
+    vid_url: 'https://www.youtube.com/embed/il5W_bFp1X0',
+    img_urls: ['../../../assets/img/gamefachade/180/180_divinity2_1.jpg',
+    '../../../assets/img/gamefachade/180/180_divinity2_2.jpg',
+    '../../../assets/img/gamefachade/180/180_divinity2_3.jpg',
+    '../../../assets/img/gamefachade/180/180_divinity2_4.jpg',
     ],
     vid_urls: [
     ],
     trailer_urls: [
     ],
-    notamm: 93,
-    notauser: 93,
+    notamm: 92,
+    notauser: 92,
     tags: ['', ''],    
   },{
     _id: 22,
-    year: 2007,
-    nomm: 155,
-    title: 'Call',
+    year: 2010,
+    nomm: 180,
+    title: 'Colin McRae DiRT 2',
+    lema: '¡Frenar es de cobardes!',
+    description:
+      'Carreras. Graficos espectaculares. DirectX 11. La ambientacion es una pasada. Es largo, variadisimo y modo online. Demasiada diferencia entre los primeros y los ultimos niveles de dificultad. Algunos preferirian menos tono arcade.',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '../../../assets/img/gamefachade/180/180_dirt2.jpg',
+    vid_url: 'https://www.youtube.com/embed/5dbd5eLzB8Y',
+    img_urls: ['../../../assets/img/gamefachade/180/180_dirt2_1.jpg',
+    '../../../assets/img/gamefachade/180/180_dirt2_2.jpg',
+    '../../../assets/img/gamefachade/180/180_dirt2_3.jpg',
+    '../../../assets/img/gamefachade/180/180_dirt2_4.jpg',
+    ],
+    vid_urls: ['https://www.youtube.com/embed/fHgkVjrvx3U'
+    ,
+    ],
+    trailer_urls: ['https://www.youtube.com/embed/8Fg5ilLHeG4'
+    ,'https://www.youtube.com/embed/md70lRSqO5c'
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['carreras', ''],    
+  },{
+    _id: 23,
+    year: 2010,
+    nomm: 190,
+    title: 'Arcania Gothic 4',
+    lema: '¡Argaan busca un paladin!',
+    description:
+     'Rol. La ambientacion. Es "Gothic" de principio a fin, pese a la nueva historia. Jugabilidad total. Sencillo y directo. Graficos e ilumniacion espectaculares. Muy justito en cuanto a opciones de desarrollo del personaje y las clases. Modelos de personajes repetitivos. Guion y desarrollo muy lineales.',
+    longdescription: [
+      'Gran retorno al mundo de Gothic. Viaja a Argaan en busca de venganza y salva al mundo asolado por la guerra, jugando como caballero, montaraz o mago, en una genial mezcal de Accion y Rol, con un nuevo heroe.'      
+      ,'La wikipedia'
+    ],
+    img_url: '../../../assets/img/gamefachade/190/190_gothic4.jpg',
+    vid_url: 'https://www.youtube.com/embed/sR_Fu-X6RkA',
+    img_urls: ['../../../assets/img/gamefachade/190/190_gothic4_1.jpg',
+    '../../../assets/img/gamefachade/190/190_gothic4_2.jpg',
+    '../../../assets/img/gamefachade/190/190_gothic4_3.jpg',
+    '../../../assets/img/gamefachade/190/190_gothic4_4.jpg',
+    '../../../assets/img/gamefachade/190/190_gothic4_5.jpg',
+    '../../../assets/img/gamefachade/190/190_gothic4_6.jpg',
+    '../../../assets/img/gamefachade/190/190_gothic4_7.jpg',
+    '../../../assets/img/gamefachade/190/190_gothic4_8.jpg',
+    '../../../assets/img/gamefachade/190/190_gothic4_9.jpg',
+    '../../../assets/img/gamefachade/190/190_gothic4_10.jpg',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: ['https://www.youtube.com/embed/ZMFF6ep3rQE'
+    ,'https://www.youtube.com/embed/bTpTn8d7BFA'
+    ],
+    notamm: 92,
+    notauser: 92,
+    tags: ['rol', ''],    
+  },{
+    _id: 24,
+    year: 2010,
+    nomm: 190,
+    title: 'Fallout New Vegas',
+    lema: '¡Es la hora del mutante!',
+    description:
+     'Rol. Toda la esencia de Fallout 3 se mantiene. Sigues usando VATS y SPECIAL. Doblaje excelente. Tecnologia grafica acusa el paso del tiempo. La curva de dificultad no esta muy bien ajustada, sobre todo al principio.',
+    longdescription: [
+      '¡Mas aventuras tras el apocalipsis!.'
+      ,'Vuelve al universo Fallout y vive tus aventuras en la Republica de Nueva California. Elige tu estio, crea tu personaje y lucha contra mutantes con el mejor Rol futurista en PC.'      
+      ,'La wikipedia'
+    ],
+    img_url: '../../../assets/img/gamefachade/190/190_falloutnewvegas.jpg',
+    vid_url: 'https://www.youtube.com/embed/fJS95UjyNjk',
+    img_urls: ['../../../assets/img/gamefachade/190/190_falloutnewvegas_1.jpg',
+    '../../../assets/img/gamefachade/190/190_falloutnewvegas_2.jpg',
+    '../../../assets/img/gamefachade/190/190_falloutnewvegas_3.jpg',
+    '../../../assets/img/gamefachade/190/190_falloutnewvegas_4.jpg',
+    '../../../assets/img/gamefachade/190/190_falloutnewvegas_5.jpg',
+    '../../../assets/img/gamefachade/190/190_falloutnewvegas_6.jpg',
+    ],
+    vid_urls: ['https://www.youtube.com/embed/6WsB6JXo0Ps'
+    ],
+    trailer_urls: ['https://www.youtube.com/embed/l-x-1fm2cq8'
+    ],
+    notamm: 95,
+    notauser: 95,
+    tags: ['rol', ''],    
+  },{
+    _id: 25,
+    year: 2010,
+    nomm: 190,
+    title: 'F1 2010',
+    lema: '¡Vive la formula 1!',
+    description:
+     'Carreras. Su realismo audiovisual y la fidelidad con que reproduce todo en la  F1. Es apto para expertos y principiantes. La dificultad ajustable te permite aprender. Gran rendimiento en pc medio. Le falta ambiente F1. Requiere volante o mando analogico.',
+    longdescription: [
+      'F1 2010 es un videojuego inspirado en la temporada 2010 de Fórmula 1. A diferencia de su predecesor, el F1 2009, este solo está disponible para las plataformas de PS3, Xbox 360 y PC. Su lanzamiento fue el 24 de septiembre de 2010 en Europa, 23 de septiembre de 2010 en Francia y 21 de septiembre de 2010 en América del Norte. '
+      ,'Cuenta con mejores gráficos y mejoras considerables en coches, circuitos y jugabilidad. Como viene siendo habitual está desarrollado por Codemasters, a través del motor EGO™ que ya ha enseñado en juegos como Race Driver: Grid. Todos los circuitos, coches y pilotos de la temporada 2010 están incluidos. '
+      ,'Un jugador'
+      ,'Trayectoria: Entra en un equipo de menor nivel (Hispania, Lotus o Virgin) y llévalo a lo más alto o ábrete paso entre las escuderías hasta situarte entre los grandes. La trayectoria arranca con las preguntas que te harán en tu primera rueda de prensa. Con las respuestas eliges la duración de tu carrera profesional, el grado de dificultad y la escudería en la que debutarás. Las escuderías disponibles dependerán de la duración que hayas escogido. Una vez en el paddock, entra en tu tráiler para pasar a la siguiente cita y emprender tu carrera hacia el estrellato.'
+      ,'Grandes premios: Disfrutarás de todos los circuitos y todas las escuderías desde el primer momento. Su estructura se asemeja a la de Trayectoria, pero aquí tendrás la oportunidad de meterte en la piel de tu piloto favorito. Podrás disputar una carrera o una temporada completa, así como organizar un minicampeonato con tus trazadas preferidas y el coche que más te guste.'
+      ,'Contrarreloj: Trata de mejorar las vueltas fantasma de tus amigos, reta a los mejores pilotos del mundo o intenta batir tu propio récord personal. Aquí podrás realizar contrarreloj en grupo mediante conexión en línea, además de poder disputarla en el circuito que quieras y con las condiciones meteorológicas que desees.'
+      ,'La wikipedia'
+    ],
+    img_url: '../../../assets/img/gamefachade/190/190_f12010.jpg',
+    vid_url: 'https://www.youtube.com/embed/I3WNFj1047o',
+    img_urls: [ '../../../assets/img/gamefachade/190/190_f12010_1.jpg',
+    '../../../assets/img/gamefachade/190/190_f12010_2.jpg',
+    '../../../assets/img/gamefachade/190/190_f12010_3.jpg',
+    '../../../assets/img/gamefachade/190/190_f12010_4.jpg',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['carreras', ''],    
+  },{
+    _id: 26,
+    year: 2010,
+    nomm: 180,
+    title: '',
     lema: '',
     description:
-      '',
+     '',
     longdescription: [
       ''      
       ,'La wikipedia'
     ],
     img_url: '',
     vid_url: '',
-    img_urls: [
+    img_urls: ['',
     ],
     vid_urls: [
     ],
     trailer_urls: [
     ],
-    notamm: 93,
-    notauser: 93,
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 27,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 28,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 29,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 30,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 31,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 32,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 33,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 34,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 35,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 36,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
+    tags: ['', ''],    
+  },{
+    _id: 37,
+    year: 2010,
+    nomm: 180,
+    title: '',
+    lema: '',
+    description:
+     '',
+    longdescription: [
+      ''      
+      ,'La wikipedia'
+    ],
+    img_url: '',
+    vid_url: '',
+    img_urls: ['',
+    ],
+    vid_urls: [
+    ],
+    trailer_urls: [
+    ],
+    notamm: 94,
+    notauser: 94,
     tags: ['', ''],    
   },
 ];

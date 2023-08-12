@@ -6,29 +6,29 @@
 <div class="input">
   <mat-form-field class="input-field-inline">
     <mat-label>desde</mat-label>
-    <input class="input-control" matInput [(ngModel)]="iYear1" (change)="filterYear1($event)" type="number" name="input_year_1" id=""
+    <input class="input-control" matInput [(ngModel)]="iYear1" (change)="filterAll($event)" type="number" name="input_year_1" id=""
       value="2010">
   </mat-form-field>
   <mat-form-field class="input-field-inline mr-5">
     <mat-label>hasta</mat-label>
-    <input class="input-control" matInput [(ngModel)]="iYear2" (change)="filterYear2($event)"type="number" name="input_year_2" id="" value="2012">
+    <input class="input-control" matInput [(ngModel)]="iYear2" (change)="filterAll($event)" type="number" name="input_year_2" id="" value="2012">
   </mat-form-field>
 
   <mat-form-field class="input-field">
     <!-- <mat-label>Search</mat-label> -->
-    <input class="input-control" matInput (keyup)="filter($event)" placeholder="search">
+    <input class="input-control" matInput [(ngModel)]="iSearch" (keyup)="filterAll($event)" placeholder="search">
   </mat-form-field>
 
 
   <mat-form-field class="input-field-inline">
     <mat-label>nota</mat-label>
-    <input class="input-control" matInput [(ngModel)]="iNotamm" type="number" name="" id=""></mat-form-field>
+    <input class="input-control" matInput [(ngModel)]="iNotamm" (change)="filterAll($event)" type="number" name="" id=""></mat-form-field>
 </div>
 
 <div class="container">
   <div class="row">
-    <div class="">
-      <table mat-table [dataSource]="dataSource" matSort 
+    <div class=""><!-- (matSortChange)="sortDataSource($event)" (matSortChange)="sortDataSource('notamm','asc')"  -->
+      <table mat-table [dataSource]="dataSource" matSort  
         class="mat-elevation-z8 z-depth-1 table table-responsive table-striped table-bordered table-hover" #tabla1>
         <ng-container matColumnDef="year">
           <th mat-header-cell mat-sort-header *matHeaderCellDef>AÑO</th>

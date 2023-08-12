@@ -6,7 +6,7 @@ import { games } from '../../data/mock-games';
 import { GameService } from '../../services/game.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Lightbox } from 'ngx-lightbox';
-import { MatSort, Sort } from '@angular/material/sort';
+import { MatSort, MatSortable, Sort } from '@angular/material/sort';
 
 declare var $: any;
 @Component({
@@ -16,7 +16,7 @@ declare var $: any;
 })
 export class GamelistComponent {
   @ViewChild(MatSort)
-  matSort!: MatSort;
+  matSort: MatSort = new MatSort();
   @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
   columnas: string[] = [
     'year',
@@ -27,11 +27,11 @@ export class GamelistComponent {
     'notamm',
   ];
   lightbox: any;
-  searchText = '';
-  iYear1: number = 2010;
-  iYear2: number = 2016;
-  iSearch!: string;
-  iNotamm: number = 100;
+  // searchText = '';
+  iYear1: number = 2006;
+  iYear2: number = 2023;
+  iSearch: string = '';
+  iNotamm: number = 80;
 
   games: Game[] = games;
   sortedData: Game[] | undefined;
@@ -45,13 +45,17 @@ export class GamelistComponent {
   ngOnInit() {
     // this.oeService.getEvents().subscribe((data:OnlineEvent[])=>{
     //   this.events = data;
+    this.games.sort(function (a, b) {
+      return a.year - b.year;
+    });
     this.dataSource = new MatTableDataSource<Game>(this.games);
     this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.matSort;
 
     // })
   }
-  ngAfterViewInit() {}
+  ngAfterViewInit() {
+    this.dataSource.sort = this.matSort;
+  }
   playVideo(url: any) {
     // const displayURL = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/tgbNymZ7vqY');
     // return displayURL;
@@ -86,23 +90,16 @@ export class GamelistComponent {
     this.dataSource.filterPredicate = function (
       data: any,
       filter: number
-    ): boolean {console.log(
-        'gamelist.component filter-> boolean=' +
-          (data.year >= year1) +
-          ' data.year=' +
-          data.year +
-          ' this.iYear1=' +
-          year1
-      );
+    ): boolean {
       return (
         (data.title.includes(filter) || data.description.includes(filter)) &&
         data.year >= year1 &&
         data.year < year2
-      );   
+      );
     };
     this.dataSource.filter = e.target.value;
   }
-  
+
   compare(a: number | string, b: number | string, isAsc: boolean) {
     return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
   }
@@ -113,7 +110,7 @@ export class GamelistComponent {
     ): boolean {
       return data.year >= filter;
     };
-    console.log('gamelist.component filteryear1--> year=' + e.target.value);
+
     this.dataSource.filter = e.target.value;
   }
   filterYear2(e: any) {
@@ -123,7 +120,45 @@ export class GamelistComponent {
     ): boolean {
       return data.year < filter;
     };
-    console.log('gamelist.component filteryear1--> year=' + e.target.value);
+
     this.dataSource.filter = e.target.value;
   }
+  filterAll(e: any) {
+    console.log('gamelist.component filter-> year1=' + this.iYear1);
+    let year1 = this.iYear1;
+    let year2 = this.iYear2;
+    let notamm = this.iNotamm;
+    let search = this.iSearch;
+    this.dataSource.filterPredicate = function (
+      data: any,
+      filter: number
+    ): boolean {
+      let tags: string[] = data.tags;
+      return (
+        (data.title.includes(search) ||
+          data.description.includes(search) ||
+          arrIncludes(tags, search)) &&
+        data.year >= year1 &&
+        data.year < year2 &&
+        data.notamm >= notamm
+      );
+    };
+    this.dataSource.filter = e.target.value;
+  }
+  sortDataSource(idVal: string, startVal?: string): void {
+    // this.dataSource.sort.sort(<MatSortable>({ id: idVal, start: startVal }));
+          
+    this.dataSource.sort.sort((a: any, b: any) => {
+      console.log('gamelist.component sortDataSource -> a=' + a['notamm']);
+      console.log('gamelist.component sortDataSource -> b=' + b['notamm']);
+      return -1;
+    });
+  }
+}
+function arrIncludes(tags: string[], search: string): any {
+  let resolve = false;
+  tags.forEach((elem) => {
+    if (elem.includes(search)) resolve = true;
+  });
+  return resolve;
 }

@@ -1,13 +1,11 @@
 <section id="section_head">
-    <div class="img wrap-text-around clearfix
+    <div class="img wrap-text-around clearfix mx-5
    ">
         <img class="img-fluid
-        rounded-circle float-left circle-placed-left
+        rounded-circle float-left circle-placed-left 
        
        " src="../assets{{ game.img_url }}" alt="imagen {{ game.title }}" srcset="" />
-       <p class="d-line">
-        {{game.title}}
-       </p>
+       
     </div>
     <div class="title d-line">
         {{game.title}}
@@ -26,8 +24,9 @@
     <h1>Trailers</h1>
     <app-vidlist [gameid]="game._id" [isTrailer]="true"></app-vidlist>
 </section>
-<h1>Videos</h1>
+
 <section id="section_videos">
+    <h1>Videos</h1>
     <app-vidlist [gameid]="game._id" [isTrailer]="false"></app-vidlist>
 </section>
 
